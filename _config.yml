@@ -18,9 +18,9 @@ email: 'stefen.pegels@gmail.com'
 description: "Enter cool description."
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sgp62.github.io/portfolio" # the base hostname & protocol for your site, e.g. https://example.com
-twitter_username: 'remove'
+linkedin_username: 'in/stefen-pegels-4070a3191/'
 github_username: 'sgp62'
-medium_username: 'remove - linkedin?'
+university: 'ece.cornell.edu'
 
 # Build settings
 markdown: kramdown
