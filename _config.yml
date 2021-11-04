@@ -16,7 +16,7 @@
 title: "Hello. I'm Stefen Pegels."
 email: 'stefen.pegels@gmail.com'
 description: "Enter cool description."
-# baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/home" # the subpath of your site, e.g. /blog
 url: "https://sgp62.github.io/portfolio" # the base hostname & protocol for your site, e.g. https://example.com
 linkedin_username: 'in/stefen-pegels-4070a3191/'
 github_username: 'sgp62'
