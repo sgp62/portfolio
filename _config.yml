@@ -32,6 +32,10 @@ remote-theme: phantom # Uncomment once published to RubyGems
 plugins:
   - jekyll-paginate-v2
 
+gem:
+  - webrick
+  - kramdown-parser-gfm
+
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
 # The values here represent the defaults if nothing is set
