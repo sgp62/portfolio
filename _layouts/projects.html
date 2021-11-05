@@ -1,12 +1,16 @@
 {% include header.html %}
-
-    {% include home-hero.html %}
-
-    <!-- <main id="portfolio">
+  
+    <main id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
 
+            {% if site.section_title != '' %}
+            <h2 class="section-title text-center">{{ site.section_title }}</h2>
+            {% endif %}
+            {% if site.section_subtitle != '' %}
+            <p class="section-subtitle text-center">{{ site.section_desc }}</p>
+            {% endif %}
 
             <div class="break"></div>
 
@@ -27,18 +31,6 @@
           </div>
         </div>
       </div>
-    </main> -->
-
-    <article>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-  
-            {{ content }}
-  
-          </div>
-        </div>
-      </div>
-    </article>
+    </main>
 
 {% include footer.html %}

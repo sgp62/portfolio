@@ -16,8 +16,13 @@
 @import '../_sass/bootstrap';
 @import '../_sass/mixins';
 
-$primary: #0a0a0a;
-$secondary: #FF7B7B;
+$primary: #000100;
+$manatee:   #A1A6B4;
+$dsblue:    #94C5CC;
+$bblue:     #B4D2E7;
+$whiteish:    #F8F8F8;
+
+
 
 %opensans { font-family: 'Open Sans', sans-serif; }
 %merriweather { font-family: 'Merriweather', serif; }
@@ -26,6 +31,8 @@ $secondary: #FF7B7B;
 	1.0 Defaults
 --------------------------------------------------------------*/
 
+//000100(black), A1A6B4(gray), 94C5CC(green/blue), B4D2E7(blue), F8F8F8(white)
+
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -33,7 +40,7 @@ $secondary: #FF7B7B;
 }
 
 body {
-  background-color: #e9edf0;
+  background-color: $manatee;
   @extend %opensans;
   -webkit-font-smoothing: antialiased;
 }
@@ -67,12 +74,12 @@ img {
 button.btn, input.btn {
   padding: 12px 35px;
   margin: 2em 0.5em;
-  border: solid 1px #d5e0e7;
+  border: solid 1px $manatee;
   border-radius: 4px;
-  color: #2E4453;
+  color:  $dsblue;  //#2E4453;
   font-weight: 600;
   &:hover, &.btn-default:hover {
-    background-color: white;
+    background-color: $whiteish;
     border: solid 1px #b0c5d2;
     -moz-box-shadow: 0 1px 0 #b0c5d2;
     -webkit-box-shadow: 0 1px 0 #b0c5d2;
@@ -88,7 +95,7 @@ button.btn, input.btn {
 }
 
 .main {
-  background-color: white;
+  background-color: $whiteish;
   border-left: solid 1px #cedfea;
   border-right: solid 1px #cedfea;
   &.container {
@@ -99,7 +106,7 @@ button.btn, input.btn {
 .section-jump {
   position: relative;
   top: 0;
-  color: #C8D7E1;
+  color: $manatee;
   margin: 0 auto;
   display: table;
   @include transition(top .2s ease-in);
@@ -189,16 +196,16 @@ button.btn, input.btn {
     margin-right: 0;
   }
   ::-webkit-input-placeholder {
-    color: #D6D6D6;
+    color: #0314fc; //#D6D6D6
   }
   :-moz-placeholder {
-    color: #D6D6D6;
+    color: #0314fc; //#D6D6D6
   }
   ::-moz-placeholder {
-    color: #D6D6D6;
+    color: #0314fc; //#D6D6D6
   }
   :-ms-input-placeholder {
-    color: #D6D6D6;
+    color: #0314fc; //#D6D6D6
   }
 }
 
@@ -228,7 +235,7 @@ button.btn, input.btn {
     top: 1.35em;
     width: 3em;
     height: 3px;
-    background-color: #ECEFF1;
+    background-color: $whiteish;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -279,7 +286,7 @@ button.btn, input.btn {
         left: 0;
         width: 3em;
         height: 3px;
-        background-color: #ECEFF1;
+        background-color: $whiteish;
       }
     }
     .excerpt {
@@ -297,16 +304,16 @@ button.btn, input.btn {
     .tags, .categories {
       margin: 2em 0;
       span {
-        color: #9eb1bd;
-        background-color: #ECEFF1;
+        color: $whiteish;
+        background-color:  $dsblue;
         padding: 0.5em 1.5em;
         display: inline-block;
         margin-bottom: 0.5em;
       }
     }
     .categories span {
-      color: #b9b1ad;
-      background-color: #EFEBE9;
+      color: $whiteish;
+      background-color:  $dsblue;
     }
   }
 }
@@ -317,12 +324,12 @@ button.btn, input.btn {
 .site-footer {
   font-size: 14px;
   margin-top: 2em;
-  border-top: 1px solid #efefef;
+  border-top: 1px solid $manatee;
   padding: 1em 0;
   p {
     font-size: 12px;
     font-weight: 600;
-    color: #9eb1bd;
+    color: $primary;
     margin: 0;
     padding: 10px 0;
     @include bp-xsmall {

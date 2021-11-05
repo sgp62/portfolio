@@ -14,9 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Hello. I'm Stefen Pegels."
+
+section_title: "Projects"
+section_desc: "These are some of the cool projects I've worked on."
+
 email: 'stefen.pegels@gmail.com'
-description: "Enter cool description."
-baseurl: "/portfolio" # the subpath of your site, e.g. /blog
+description: "I'm an electrical engineer from Cornell University specializing in embedded systems and SoC architecture."
+#baseurl: "/portfolio" # the subpath of your site, e.g. /blog
 url: "https://sgp62.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 linkedin_username: 'in/stefen-pegels-4070a3191/'
 github_username: 'sgp62'
@@ -97,5 +101,5 @@ enable_contact: false
 #### Phantom Navigation menu
 enable_nav: true
 nav_item:
-  - { url: '/', text: 'Home' }
-  - { url: '/about', text: 'About' }
+  - { url: '/', text: 'About' }
+  - { url: '/projects', text: 'Projects' }
