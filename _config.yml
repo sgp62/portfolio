@@ -28,13 +28,15 @@ university: 'ece.cornell.edu'
 
 # Build settings
 markdown: kramdown
-remote-theme: phantom # Uncomment once published to RubyGems
+#remote-theme: jamigibbs/phantom # Uncomment once published to RubyGems
 plugins:
   - jekyll-paginate-v2
-
-gem:
-  - webrick
   - kramdown-parser-gfm
+  - webrick
+
+# gem:
+#   - webrick
+#   - kramdown-parser-gfm
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
