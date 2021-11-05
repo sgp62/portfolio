@@ -20,7 +20,7 @@ section_desc: "These are some of the cool projects I've worked on."
 
 email: 'stefen.pegels@gmail.com'
 description: "I'm an electrical engineer from Cornell University specializing in embedded systems and SoC architecture."
-#baseurl: "/portfolio" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sgp62.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 linkedin_username: 'in/stefen-pegels-4070a3191/'
 github_username: 'sgp62'
@@ -28,7 +28,7 @@ university: 'ece.cornell.edu'
 
 # Build settings
 markdown: kramdown
-# theme: phantom # Uncomment once published to RubyGems
+remote-theme: phantom # Uncomment once published to RubyGems
 plugins:
   - jekyll-paginate-v2
 
