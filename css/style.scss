@@ -15,6 +15,8 @@
 
 @import '../_sass/bootstrap';
 @import '../_sass/mixins';
+@import url('https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Saira+Extra+Condensed:100,200,300,400,500,600,700,800|Saira:100,200,300,400,500,600,700,800');
+
 
 $primary: #000100;
 $manatee:   #A1A6B4;
@@ -26,6 +28,13 @@ $whiteish:    #F8F8F8;
 
 %opensans { font-family: 'Open Sans', sans-serif; }
 %merriweather { font-family: 'Merriweather', serif; }
+
+/* Import */
+
+
+/* Variables */
+
+
 
 /*--------------------------------------------------------------
 	1.0 Defaults
@@ -153,6 +162,102 @@ button.btn, input.btn {
     display: table;
     i {
       padding-right: 0.5em;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+	2.0.1 Timeline
+--------------------------------------------------------------*/
+
+
+$spacing: 50px;
+$radius: 4px;
+
+$date: 120px;
+$dotborder: 4px;
+$dot: 11px;
+$line: 4px;
+
+$font-title: 'Saira', sans-serif;
+$font-text: 'Chivo', sans-serif;
+
+#timeline-content {
+  margin-top: 50px;
+  text-align: center;  
+}
+
+/* Timeline */
+
+.timeline {
+  border-left: 4px solid $dsblue;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;    
+  background: fade($whiteish, 3%);
+  color: fade($whiteish, 80%);
+  font-family: $font-text;  
+  margin: $spacing auto;  
+  letter-spacing: 0.5px;   
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;   
+  padding: $spacing;   
+  list-style: none;
+  text-align: left;  
+  font-weight: 100;  
+  max-width: 30%; 
+  
+  h1 {
+  //  font-family: %merriweather;
+   letter-spacing: 1.5px;
+   font-weight: 100;
+   font-size: 1.4em;    
+  }
+  
+  h2, h3 {
+  //  font-family: @font-title;
+   letter-spacing: 1.5px;
+   font-weight: 400;
+   font-size: 1.4em;
+  }
+  
+  .event {
+    border-bottom: 1px dashed fade($manatee, 10%);
+    padding-bottom: ($spacing * 0.5);
+    margin-bottom: $spacing;  
+    position: relative;
+
+    &:last-of-type { 
+      padding-bottom: 0;
+      margin-bottom: 0; 
+      border: none;      
+    }
+
+    &:before, &:after {
+      position: absolute;
+      display: block;
+      top: 0;
+    }
+
+    &:before {
+      left: ((($date * 0.6) + $spacing + $line + $dot + ($dotborder * 2)) * 1.5) * -1;    
+      color: fade($whiteish, 40%);    
+      content: attr(data-date);
+      text-align: right;
+      font-weight: 100;    
+      font-size: 0.9em;
+      min-width: $date;
+    }
+
+    &:after {
+      box-shadow: 0 0 0 $dotborder fade($bblue,100%);    
+      left: ($spacing + $line + ($dot * 0.35)) * -1;        
+      background: lighten($manatee,5%);    
+      border-radius: 50%;  
+      height: $dot;
+      width: $dot;
+      content: "";
+      top: 5px;
     }
   }
 }
