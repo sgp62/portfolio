@@ -26,9 +26,6 @@ $whiteish:    #F8F8F8;
 
 
 
-%opensans { font-family: 'Open Sans', sans-serif; }
-%merriweather { font-family: 'Merriweather', serif; }
-
 /* Import */
 
 
@@ -50,20 +47,25 @@ $whiteish:    #F8F8F8;
 
 body {
   background-color: $manatee;
-  @extend %opensans;
+  font-family: 'Chivo', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @extend %merriweather;
-  font-weight: 700;
+  // @extend %merriweather;
+  font-family: 'Saira', sans-serif;
+  font-weight: 400;
+  
+  
 }
 
 article {
   margin: 5em 0;
+  font-family: 'Chivo'
 }
 
 p {
+  font-family: 'Chivo', sans-serif;
   line-height: 1.8;
   font-size: 1.3em;
 }
@@ -71,7 +73,7 @@ p {
 a {
   @include transition(color .2s ease-in-out);
   &:hover {
-    color: #FF5B33;
+    color: $dsblue;
     text-decoration: none;
   }
 }
@@ -81,6 +83,7 @@ img {
 }
 
 button.btn, input.btn {
+  font-family: 'Chivo', sans-serif;
   padding: 12px 35px;
   margin: 2em 0.5em;
   border: solid 1px $manatee;
@@ -204,18 +207,16 @@ $font-text: 'Chivo', sans-serif;
   padding: $spacing;   
   list-style: none;
   text-align: left;  
-  font-weight: 100;  
+  font-weight: 200;  
   max-width: 30%; 
   
   h1 {
-  //  font-family: %merriweather;
    letter-spacing: 1.5px;
-   font-weight: 100;
+   font-weight: 200;
    font-size: 1.4em;    
   }
   
   h2, h3 {
-  //  font-family: @font-title;
    letter-spacing: 1.5px;
    font-weight: 400;
    font-size: 1.4em;
@@ -302,16 +303,16 @@ $font-text: 'Chivo', sans-serif;
     margin-right: 0;
   }
   ::-webkit-input-placeholder {
-    color: #0314fc; //#D6D6D6
+    color: $bblue; //#D6D6D6
   }
   :-moz-placeholder {
-    color: #0314fc; //#D6D6D6
+    color: $bblue; //#D6D6D6
   }
   ::-moz-placeholder {
-    color: #0314fc; //#D6D6D6
+    color: $bblue; //#D6D6D6
   }
   :-ms-input-placeholder {
-    color: #0314fc; //#D6D6D6
+    color: $bblue; //#D6D6D6
   }
 }
 
