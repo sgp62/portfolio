@@ -200,7 +200,7 @@ $font-text: 'Chivo', sans-serif;
   color: fade($whiteish, 80%);
   font-family: $font-text;  
   margin: $spacing auto;  
-  letter-spacing: 0.5px;   
+  letter-spacing: 0.5px;
   position: relative;
   line-height: 1.4em;
   font-size: 1.03em;   
@@ -220,6 +220,7 @@ $font-text: 'Chivo', sans-serif;
    letter-spacing: 1.5px;
    font-weight: 400;
    font-size: 1.4em;
+   
   }
   
   .event {
@@ -227,6 +228,8 @@ $font-text: 'Chivo', sans-serif;
     padding-bottom: ($spacing * 0.5);
     margin-bottom: $spacing;  
     position: relative;
+    min-width: 300px;
+    
 
     &:last-of-type { 
       padding-bottom: 0;
@@ -262,6 +265,31 @@ $font-text: 'Chivo', sans-serif;
     }
   }
 }
+
+/*--------------------------------------------------------------
+	2.0.2 Columns
+--------------------------------------------------------------*/
+.two-col {
+  overflow: hidden;/* Makes this div contain its floats */
+}
+
+.two-col .col1,
+.two-col .col2 {
+  width: 50%;
+}
+
+.two-col .col1 {
+  float: left;
+}
+
+.two-col .col2 {
+  float: right;
+}
+
+.two-col label {
+  display: block;
+}
+
 
 /*--------------------------------------------------------------
 	2.1 Contact
